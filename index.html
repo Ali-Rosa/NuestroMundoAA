@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feliz Aniversario Coco</title>
+  <meta name="description" content="Una carta para celebrar nuestro aniversario">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Capa de corazones flotando -->
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <!-- Pantalla inicial: el sobre -->
+  <section class="intro" id="intro">
+    <p class="intro__hint">Tengo algo para ti, y solo para ti, coco, <span data-fill="esposa"></span></p>
+
+    <button class="envelope" id="envelope" aria-label="Abrir la carta">
+      <span class="envelope__back"></span>
+      <span class="envelope__paper"></span>
+      <span class="envelope__front"></span>
+      <span class="envelope__flap"></span>
+      <span class="envelope__seal">&hearts;</span>
+    </button>
+
+    <p class="intro__tap">Toca el sobre para abrirlo</p>
+  </section>
+
+  <!-- La carta -->
+  <main class="letter" id="letter" hidden>
+
+    <header class="hero reveal">
+      <p class="hero__eyebrow">Feliz aniversario, Princesa mía</p>
+      <h1 class="hero__title"><span id="yearsNum">8</span> <span id="yearsWord">años</span><br>Juntitos</h1>
+      <p class="hero__date" id="startDateText"></p>
+      <p class="hero__counter">
+        Han pasado <strong id="daysCount">0</strong> días desde que decidimos caminar juntos, tomados de la mano.
+        <br><span id="yearsDaysText"></span>
+      </p>
+    </header>
+
+    <article class="paper">
+      <p class="reveal">Mi amada Princesa, desde mi corazón, mi esposa:</p>
+
+      <p class="reveal">
+        Hoy se cumplen ocho años desde que empezamos esta historia, y todavía me
+        sorprende lo mucho que cabe en ese número: risas, abrazos, días difíciles
+        que superamos de la mano y mil pequeñas cosas que solo nosotros entendemos,
+        donde cada uno supo llenar de ternura y consuelo cada necesidad en el otro.
+      </p>
+
+      <p class="reveal">
+        Sé que soy el peor con las fechas y los números; estoy seguro de que por eso diosito nos juntó:
+        a ti por tu capacidad de comprenderme y a mí por mi capacidad de olvidarme de todo,
+        pero no con mala intención, soy un niño en muchas ocasiones y tú me ayudas a ser mejor cada día
+        en esos detalles tan valiosos, que por estar en mil cosas muchas veces dejo pasar y me siento mal de que eso suceda,
+        pero tú me recuerdas que lo importante es el amor y la paciencia que nos tenemos,
+        y que debo disciplinar mi memoria y mi corazón para que no se me olviden los pequeños grandes detalles.
+      </p>
+
+      <p class="reveal">
+        Gracias por estar siempre allí. Por quedarte cuando fue difícil, por celebrar conmigo
+        cuando fue fácil, y por hacer de lo cotidiano algo especial, único y maravilloso.
+        Contigo aprendí, y continúo aprendiendo, que el hogar no es un lugar,
+        es una persona, tu persona, mi persona ideal.
+      </p>
+
+      <p class="reveal">
+        Y si pudiera volver a elegir, te elegiría las ocho veces, y las que vengan
+        después. Cada año a tu lado ha sido mejor que el anterior,
+        no le tememos al mundo ni a aventurarnos en él,
+        eso lo amo de ti, y quiero
+        seguir descubriendo qué nos falta por vivir, que sabemos que es bastantísimooo más.
+      </p>
+
+      <p class="reveal">
+        Una vez más, gracias por ser mi compañera, mi mejor amiga y mi lugar favorito en el mundo mundial.
+        Te amo hoy, mañana y todos los años que nos queden, mi coco, mi muñequita, mi hermosa y cariñosa esposa.
+      </p>
+
+      <p class="reveal">
+        Y como soy programador y me gusta la tecnología, te hice esta carta digital para que la tengas siempre a la mano y puedas leerla cuando quieras,
+        y que sepas que cada palabra que escribí es de mi corazón y de mi alma, y que no hay nada que me haga más feliz que hacerte feliz a ti.
+      </p>
+
+      <p class="signature reveal">
+        Con todo mi amor,<br>
+        <span data-fill="firma"></span>
+      </p>
+    </article>
+
+    <!-- Línea de tiempo: un momento por año -->
+    <section class="timeline">
+      <h2 class="timeline__title reveal">Ocho años, ocho recuerdos</h2>
+
+      <!-- ✏️ EDITA CADA AÑO con un recuerdo real de ustedes -->
+      <ol class="timeline__list">
+        <li class="reveal"><span class="year">Año 1</span><p>El comienzo. Todo era nuevo y yo ya sabía que eras tú,
+           sabía que era en serio y que valías todo en el mundo.</p></li>
+        <li class="reveal"><span class="year">Año 2</span><p>Fue un año de cambios, de pruebas difíciles, de soltar, de llorar,
+          de despedidas muy tristes, algunas para siempre, de tomar decisiones en caliente,
+          de viajes, de adaptaciones, de aprender a vivir juntos, de aprender a conocernos,
+          de aprender a amarnos, de aprender a respetarnos, de aprender a ser pacientes,
+          de aprender a ser tolerantes, de aprender a ser comprensivos, de aprender a ser empáticos,
+          de aprender a ser humildes, de aprender a ser agradecidos,
+          tocó renacer en otro país, con otra cultura y con un clima que casi nos congela,
+          pero aun así nos mantuvimos juntos y fuertes, y nos dimos cuenta de que el amor es más fuerte que cualquier cosa,
+          y que cuando se quiere se puede.
+        </p></li>
+        <li class="reveal"><span class="year">Año 3</span><p>Nuestros primeros grandes planes juntos,
+          al fin yo trabajando de algo que me gustaba y tú en un mejor empleo, aunque la pandemia
+          nos recogió y ambos nos mantuvimos fuertes y abrazados en todo momento,
+          le echamos un camión de bolas, ¡juntos!, apoyándonos y dándonos fuerzas, en aquella habitación de 5 por 5,
+          hicimos nuevos amigos, conocimos nuevas personas, recuerdo que contábamos nuestra historia, la que apenas estaba iniciando,
+          pero que estaba cargada de luchas, algunas con victorias y otras con aprendizajes,
+          también compramos nuestra primera cocina, y con ella aprendimos a cocinar juntos, 
+          a reírnos de nuestros errores y a disfrutar de los pequeños momentos que nos regalaba la vida y compramos nuestra licuadora guerrera
+          y una tostadora. </p></li>
+        <li class="reveal"><span class="year">Año 4</span><p>Descubrimos que podíamos con cualquier cosa si era en equipo y así fue como decidimos emprender en ferias,
+          sacábamos fuerzas de donde no teníamos para ir cada fin de semana, con una sonrisa a atender al público que admiraba tu arte,
+          y yo motivándote con todo mi amor, para que continuaras adelante, a pesar de saber que estábamos agotados de no tener ni un medio día de descanso,
+          compramos nuestras primeras tablas, y del ahorro conjunto comprábamos más materiales e hicimos de nuestra pequeña habitación un lugar para nuestros sueños,
+          estoy seguro de que este momento lo recuerdas exactamente como yo, con lágrimas en los ojos, porque a pesar del cansancio,
+          de la falta de tiempo, de la falta de dinero para crecer más, de la falta de espacio, estábamos repletos de ilusiones, de sueños y
+          daríamos luz a una realidad que construimos con nuestras manos y nuestro corazón, y que nos llenaba de felicidad y orgullo.
+        </p></li>
+        <li class="reveal"><span class="year">Año 5</span><p>Cinco años: la mitad de una década, y la materialización de nuestros esfuerzos se veía,
+          las ferias fueron siendo menos y la tienda al fin tuvo un lugar físico, gracias a tu familia y a su ayuda, en especial a don Aly,
+           y muchísimo más en especial a tu capacidad de discernir y saber administrar la oportunidad, dimos un salto con muchísima fuerza,
+           y tú y yo allí, ¡abrazados!, sonriendo y creciendo, juntos y planeando nuestro futuro.</p></li>
+        <li class="reveal"><span class="year">Año 6</span><p>Más fuertes, más unidos, más nosotros, ese año fue también de más retos superados, muchísima energía y apoyo entre ambos,
+          muchísima más unión y amor, y de mucho aprendizaje, de mucho crecimiento, de mucho trabajo, de mucho esfuerzo, de mucho sacrificio, fue un año de una lucha muy muy fuerte,
+          solo puedo decir: gracias a Dios por darnos la fortaleza para sobrellevarlo y gracias a ti, por no desvanecer y mantenerte firme,
+          este año creo que tambien llego Kanelita a nuestras vidas, un angelito que llego a darnos fortalezas.
+        </p></li>
+        <li class="reveal"><span class="year">Año 7</span><p>La calma de saber que el amor es elegirnos cada día, año de nuevos comienzos, 
+          de gran esfuerzo una vez más, pero de demostrarnos que lo que hemos vivido nos ha hecho fuertes y sabios, 
+          que somos capaces de mantenernos unidos y de hacer que crezca el verdor en el desierto,
+          y como nos encantaba el frio y la aventura, aqui estamos, frente el mar cantabro!! jajajaja de venezuela para el mundo!! .</p></li>
+        <li class="reveal"><span class="year">Año 8</span><p>Hoy. Y aun así, siento que apenas estamos empezando, jajaja, y tal vez sea así,
+           pero siempre lo superaremos y creceremos, mientras continuemos juntos cuidando nuestro amor,
+          como no soy muy bueno en cronología, posiblemente puse recuerdos de fechas en otras fechas, pero en este periodo de tiempo
+          todo ese universo entró y lo vivimos juntos y tomados de la mano,
+          eso sí lo recuerdo muy bien, y que no te soltaré nunca de esa pequeña mano, que puede hacer grandes cosas. Te amo, Alieska.</p></li>
+      </ol>
+    </section>
+
+    <footer class="end reveal">
+      <p class="end__heart">&hearts;</p>
+      <button class="btn" id="burst">Enviarte un abrazo</button>
+      <p class="end__note">Feliz aniversario, <span data-fill="esposa"></span></p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
